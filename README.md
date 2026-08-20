@@ -16,7 +16,9 @@ Inspiré du célèbre *7-Minute Workout* (publié par l'American College of Spor
 * **10" de repos :** Temps de récupération ultra-court permettant une transition rapide vers l'exercice suivant.
 * **12 exercices :** Un cycle complet ciblant les principaux groupes musculaires, avec pour chacun le nom de l'exercice et le placement de l'élastique (et 🎯 la cible musculaire) indiqués à l'écran et annoncés à voix haute (pratique mains occupées).
 
+
 **Prérequis :** un élastiband (bande de résistance élastique) — seul équipement nécessaire.
+
 
 
 ### 💡 **Choix de la résistance & Progression**
