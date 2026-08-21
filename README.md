@@ -68,7 +68,7 @@ Application web statique hébergée sur **GitHub Pages** :
 
 ## 🔒 Vie Privée & Transparence
 * **0 donnée collectée :** Tout s'exécute en local dans votre navigateur.
-* **Note technique :** Le fichier `googleXXXXXXXX.html` sert uniquement à la validation Google Search Console (totalement passif). Vous pouvez le supprimer si vous forkez le projet.
+* **Note technique :** Le fichier `google63e2b83e56a09b13.html` sert uniquement à la validation Google Search Console (totalement passif). Vous pouvez le supprimer si vous forkez le projet.
 
 ## ⚖️ Licence & Commu
 * **Licence :** MIT (Libre d'utilisation, de modification et de distribution).
