@@ -7,7 +7,7 @@
 
     <title>FLEX 7 min Workout ✧ Musculation Élastiques 30s/Repo 10s x 12</title>
     <meta name="description" content="FLEX 7 min, musculation aux élastibands méthode HIIT. Nano App 🪶 100% FREE SANS Pub SANS Cookie • Mode avion ✅ • Code Open Source (MIT)">
-    <meta name="theme-color" id="theme-color-meta" content="#d4ff01">
+    <meta name="theme-color" id="theme-color-meta" content="#8b5cf6">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -30,7 +30,7 @@
 
 
     <style>
-        :root { --accent: #d4ff01; --accent-dark: #6d28d9; --rest-color: #00d9ff; }
+        :root { --accent: #8b5cf6; --accent-dark: #6d28d9; --rest-color: #00d9ff; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: #1a1a2e; background-image: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('a.svg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: auto 80vh; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; }
         h1 { font-size: 4.2rem; font-weight: 900; letter-spacing: 3px; color: var(--accent); margin-bottom: 4px; }
@@ -187,12 +187,12 @@
             { name: "Élévations latérales", band: "Sous un pied, tirage bras tendus sur les côtés", target: "Épaules (faisceau moyen)" },
             { name: "Woodchopper (Bûcheron)", band: "Ancré en haut, rotation du buste vers le bas", target: "Obliques, sangle abdominale" }
         ];
-        const PRESETS = ['#d4ff01','#e67e22','#f1c40f','#2ecc71','#1abc9c','#3498db','#e94560','#e91e8c','#00bcd4','#ff5722'];
+        const PRESETS = ['#8b5cf6','#e67e22','#f1c40f','#2ecc71','#1abc9c','#3498db','#e94560','#e91e8c','#00bcd4','#ff5722'];
         const CIRCUM = 2 * Math.PI * 68;
         const COLOR_KEY = 'flex-color';
         const SESSIONS_KEY = 'flex-sessions';
 
-        let currentAccent = '#d4ff01', pendingColor = '#d4ff01';
+        let currentAccent = '#8b5cf6', pendingColor = '#8b5cf6';
         let totalTours = 1, currentTour = 1, exIdx = 0, phase = 'work', timeLeft = 30, paused = false, interval = null;
         let audioCtx = null, wheelCtx = null;
 
