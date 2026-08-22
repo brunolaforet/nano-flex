@@ -5,13 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!-- Balise Canonique -->
-  <link rel="canonical" href="https://brunolaforet.github.io/nano-flex/" />
-
-    
     <title>FLEX 7 min Workout ✧ Musculation Élastiques 30s/Repo 10s x 12</title>
     <meta name="description" content="FLEX 7 min, musculation aux élastibands méthode HIIT. Nano App 🪶 100% FREE SANS Pub SANS Cookie • Mode avion ✅ • Code Open Source (MIT)">
-    <meta name="theme-color" id="theme-color-meta" content="#8b5cf6">
+    <meta name="theme-color" id="theme-color-meta" content="#d4ff01">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,11 +30,11 @@
 
 
     <style>
-        :root { --accent: #8b5cf6; --accent-dark: #6d28d9; --rest-color: #00d9ff; }
+        :root { --accent: #d4ff01; --accent-dark: #6d28d9; --rest-color: #00d9ff; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: #1a1a2e; background-image: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('a.svg'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: auto 80vh; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; }
         h1 { font-size: 4.2rem; font-weight: 900; letter-spacing: 3px; color: var(--accent); margin-bottom: 4px; }
-        .subtitle { font-size: 0.75rem; color: #aaa; letter-spacing: 1px; margin-bottom: 16px; text-align: center; }
+        .subtitle { font-size: 0.75rem; color: #aaa; letter-spacing: 1px; margin-bottom: 16px; text-align: center; font-weight: normal; }
         .subtitle-tag { font-size: 0.75rem; color: #aaa; letter-spacing: 1px; font-weight: 700; text-transform: uppercase; text-align: center; margin-bottom: 4px; }
         .color-pill { display: flex; align-items: center; gap: 7px; background: #16213e; border: 1.5px solid #333; border-radius: 30px; padding: 6px 14px; cursor: pointer; font-size: 0.78rem; color: #ccc; margin-bottom: 20px; }
         .color-dot { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); }
@@ -56,7 +52,7 @@
         main { width: 100%; max-width: 400px; text-align: center; }
         #workout, #done { display: none; }
 
-        .level-title { font-size: 0.75rem; color: #aaa; letter-spacing: 1px; margin-bottom: 16px; text-align: center; }
+        .level-title { font-size: 0.75rem; color: #aaa; letter-spacing: 1px; margin-bottom: 16px; text-align: center; font-weight: normal;}
         .levels { display: flex; gap: 10px; justify-content: center; margin-bottom: 28px; }
         .lvl-btn { padding: 10px; border: 2px solid var(--accent); background: transparent; color: #fff; border-radius: 15px; cursor: pointer; flex: 1; font-size: 0.75rem; transition: background 0.2s; }
         .lvl-btn.active { background: var(--accent); }
@@ -109,8 +105,8 @@
 </head>
 <body>
     <h1>FLEX - 7'</h1>
-    <p class="subtitle-tag">Musculation avec élastibands</p>
-    <p class="subtitle">30s (à ton rythme) · 10s repos · 12 exercices</p>
+    <h2 class="subtitle-tag">Musculation avec élastibands</h2>
+    <h3 class="subtitle">30s (à ton rythme) · 10s repos · 12 exercices</h3>
 
     <div class="color-pill" onclick="openModal()">
         <div class="color-dot" id="colorDot"></div>
@@ -119,11 +115,11 @@
 
     <main>
         <section id="setup">
-            <p class="level-title">Choisissez votre niveau</p>
+            <h3 class="level-title">Choisissez votre niveau</h3>
             <div class="levels">
-                <button class="lvl-btn active" onclick="setLevel(1,this)">🟢 Débutant<br><small>1 tour</small></button>
-                <button class="lvl-btn" onclick="setLevel(2,this)">🟠 Intermédiaire<br><small>2 tours</small></button>
-                <button class="lvl-btn" onclick="setLevel(3,this)">🔴 Avancé<br><small>3 tours</small></button>
+                <h4><button class="lvl-btn active" onclick="setLevel(1,this)">🟢 Débutant<br><small>1 tour</small></button></h4>
+                <h4><button class="lvl-btn" onclick="setLevel(2,this)">🟠 Intermédiaire<br><small>2 tours</small></button></h4>
+                <h4><button class="lvl-btn" onclick="setLevel(3,this)">🔴 Avancé<br><small>3 tours</small></button></h4>
             </div>
             <button class="start-btn" onclick="startWorkout()">▶ COMMENCER</button>
             <div style="width: 100%; text-align: center; margin-top: 10px;">
@@ -151,7 +147,7 @@
 
         <section id="done">
             <div style="font-size: 4rem;">🏆</div>
-            <h2 style="color: #27ae60; margin-bottom: 10px;">Bravo !</h2>
+            <p style="color: #27ae60; margin-bottom: 10px;">Bravo !</p>
             <p id="doneMsg" style="margin-bottom: 25px; color: #aaa;"></p>
             <button class="start-btn" onclick="restart()">🔄 Recommencer</button>
         </section>
@@ -159,7 +155,7 @@
 
     <div class="modal-bg" id="modalBg">
         <div class="modal">
-            <h3>🎨 Choisir une couleur</h3>
+            <p>🎨 Choisir une couleur</p>
             <canvas id="wheelCanvas" width="200" height="200"></canvas>
             <input type="range" id="lightnessSlider" min="10" max="90" value="50" style="width:100%; margin-bottom:15px;">
             <div class="preview-swatch" id="previewSwatch"></div>
@@ -191,12 +187,12 @@
             { name: "Élévations latérales", band: "Sous un pied, tirage bras tendus sur les côtés", target: "Épaules (faisceau moyen)" },
             { name: "Woodchopper (Bûcheron)", band: "Ancré en haut, rotation du buste vers le bas", target: "Obliques, sangle abdominale" }
         ];
-        const PRESETS = ['#8b5cf6','#e67e22','#f1c40f','#2ecc71','#1abc9c','#3498db','#e94560','#e91e8c','#00bcd4','#ff5722'];
+        const PRESETS = ['#d4ff01','#e67e22','#f1c40f','#2ecc71','#1abc9c','#3498db','#e94560','#e91e8c','#00bcd4','#ff5722'];
         const CIRCUM = 2 * Math.PI * 68;
         const COLOR_KEY = 'flex-color';
         const SESSIONS_KEY = 'flex-sessions';
 
-        let currentAccent = '#8b5cf6', pendingColor = '#8b5cf6';
+        let currentAccent = '#d4ff01', pendingColor = '#d4ff01';
         let totalTours = 1, currentTour = 1, exIdx = 0, phase = 'work', timeLeft = 30, paused = false, interval = null;
         let audioCtx = null, wheelCtx = null;
 
@@ -219,14 +215,18 @@
         }
 
         function speak(t) {
-            if (window.speechSynthesis) {
-        const u = new SpeechSynthesisUtterance(t);
-        u.lang = 'fr-FR';
-        u.rate = 1.3; // 1.0 = normal, 1.2 = dynamique, 1.5 = très rapide
-        speechSynthesis.cancel();
-        speechSynthesis.speak(u);
-            }
-        }
+  if (window.speechSynthesis) {
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = 'fr-FR';
+
+    // 1.15 pour Android (plus lent de base), 1.0 pour Desktop/Linux
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    u.rate = isAndroid ? 1.15 : 1.0;
+
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  }
+}
 
         function setLevel(n, btn) {
             totalTours = n;
